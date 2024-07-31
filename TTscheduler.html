@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable Schedule</h1>
+        <form id="timetable-form">
+            <label for="startTime">Start Time:</label>
+            <input type="time" id="startTime" required>
+
+            <label for="totalTime">Total Study Time (hours):</label>
+            <input type="number" id="totalTime" required>
+
+            <label for="chapters">Number of Chapters:</label>
+            <input type="number" id="chapters" required>
+
+            <button type="submit">Generate Schedule</button>
+        </form>
+
+        <h2>Schedule</h2>
+        <ul id="schedule-list"></ul>
+
+        <div id="warning-message" class="warning-message"></div>
+    </div>
+
+    <div class="scrolling-text">
+        <span>"Plan Your Time, Achieve Your Goals!"</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
